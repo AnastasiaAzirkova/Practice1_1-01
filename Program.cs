@@ -19,6 +19,13 @@ namespace PracticalWork1
         {
             Console.WriteLine($"Счет: {Name} | №{Number} | Сумма: {Balance:F2} руб.");
         }
-    }
 
+        static void Main(string[] args)
+        {
+            Account myAccount = new Account("Иван Иванов", 10001, 5500.50);
+            myAccount.ShowInfo();
+            Console.WriteLine("\nНажмите любую клавишу для выхода...");
+            Console.ReadKey();
+        }
     }
+}
